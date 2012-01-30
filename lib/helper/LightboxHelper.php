@@ -25,5 +25,5 @@ function lb_link_to($name,$url,$lnk_opts = array(), $lb_opts = array()) {
   $response->addStylesheet(sfConfig::get("app_ddlightbox_css_dir").'jquery.lightbox.css');
 
   echo javascript_tag("$('.lightbox').lightbox();");
-  return link_to($name,$url, $opts);
+  return link_to($name,$url, $lnk_opts);
 }
